@@ -48,7 +48,7 @@ export const brands: Brand[] = [
     name: 'LG',
     tagline: 'Linear Compressor & French Door Specialists',
     intro:
-      'LG refrigerators are widely used across Houston homes. Our technicians are experienced with LG's linear compressor technology, InstaView doors, and Smart Diagnosis systems.',
+      'LG refrigerators are widely used across Houston homes. Our technicians are experienced with LG linear compressor technology, InstaView doors, and Smart Diagnosis systems.',
     commonProblems: [
       'Linear compressor failure',
       'Ice maker freezing over',
