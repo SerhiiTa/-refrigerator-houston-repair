@@ -120,7 +120,7 @@ export default function ScheduleForm() {
           className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20"
         >
           <option value="">Select brand</option>
-          {['Sub-Zero', 'Thermador', 'Viking', 'LG', 'Samsung', 'GE', 'Whirlpool', 'KitchenAid', 'Bosch', 'Other'].map(b => (
+          {['Sub-Zero', 'Thermador', 'Viking', 'LG', 'Samsung', 'GE', 'Whirlpool', 'KitchenAid', 'Bosch', 'Miele', 'Scotsman', 'U-Line', 'Marvel', 'Liebherr', 'Dacor', 'Jenn-Air', 'Maytag', 'Frigidaire', 'Electrolux', 'Amana', 'Kenmore', 'Fisher &amp; Paykel', 'Other'].map(b => (
             <option key={b} value={b}>{b}</option>
           ))}
         </select>
