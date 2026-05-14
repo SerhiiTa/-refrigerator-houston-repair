@@ -13,6 +13,7 @@ export interface RepairCase {
   partsReplaced: string[]
   result: string
   image?: string
+  photos?: { src: string; caption: string }[]
 }
 
 export const repairCases: RepairCase[] = [
@@ -34,7 +35,7 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Repaired sealed system leak, replaced evaporator coil assembly, installed new filter drier, recharged system.',
     partsReplaced: ['Evaporator coil assembly', 'Filter drier', 'R-134a refrigerant charge'],
     result: 'Unit cooling to 37 degrees F refrigerator / 0 degrees F freezer within 4 hours of repair.',
-    image: '/images/repair-subzero-648pro.jpg',
+    image: '/images/repair-subzero-648pro.jpeg',
   },
   {
     slug: 'lg-compressor-replacement',
@@ -54,7 +55,7 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Replaced linear compressor, vacuumed and recharged sealed system, tested all sensors.',
     partsReplaced: ['LG linear compressor (genuine OEM)', 'Filter drier', 'Refrigerant'],
     result: 'Cooling restored. Customer noted unit is quieter than before.',
-    image: '/images/repair-lg.jpg',
+    image: '/images/repair-lg.jpeg',
   },
   {
     slug: 'thermador-wine-cooler-leak',
@@ -80,8 +81,13 @@ export const repairCases: RepairCase[] = [
       'R-134a refrigerant (factory spec charge by weight)',
     ],
     result: 'Wine cooler fully restored to factory performance. Temperature stabilized at 45 degrees F within 2 hours of recharge. Customer saved over $5,000 compared to the cost of purchasing and installing a new Thermador built-in wine cooler. Unit has been operating perfectly since the repair.',
-    image: '/images/repair-thermador-wine-1.jpg',
-  },
+    image: '/images/repair-thermador-wine-1.jpeg',
+    photos: [
+      { src: '/images/repair-thermador-wine-1.jpeg', caption: 'Thermador T18IW900SP wine cooler in The Woodlands, TX — temperature not maintaining set point' },
+      { src: '/images/repair-thermador-wine-3.jpeg', caption: 'Leak detection confirmed — visible bubbling at the leak point in the copper tubing' },
+      { src: '/images/repair-thermador-wine-5.jpeg', caption: 'Professional tools on site: manifold gauges, nitrogen tank, vacuum pump and new filter drier' },
+      { src: '/images/repair-thermador-wine-6.jpeg', caption: 'Wine cooler during repair — sealed system being serviced' },
+    ],  },
   {
     slug: 'sub-zero-evaporator-leak',
     brand: 'Sub-Zero',
@@ -100,7 +106,7 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Located and repaired pinhole leak, replaced drier on both circuits, recharged both sides of the dual compressor system.',
     partsReplaced: ['Evaporator repair', 'Dual circuit filter driers (x2)', 'Refrigerant (both circuits)'],
     result: 'Both sections restored to proper temps. 1-year warranty on sealed system work.',
-    image: '/images/repair-ge.jpg',
+    image: '/images/repair-ge.jpeg',
   },
   {
     slug: 'samsung-ice-maker-repair',
@@ -120,7 +126,7 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Replaced defrost heater, defrost thermostat, manually defrosted unit, tested ice maker operation.',
     partsReplaced: ['Defrost heater assembly', 'Defrost thermostat', 'Ice maker module'],
     result: 'Ice maker producing ice normally. No further leaking.',
-    image: '/images/repair-samsung.jpg',
+    image: '/images/repair-samsung.jpeg',
   },
   {
     slug: 'viking-not-cooling',
@@ -140,6 +146,6 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Replaced condenser fan motor, cleaned condenser coils, verified compressor operation.',
     partsReplaced: ['Condenser fan motor', 'Fan blade'],
     result: 'Unit cooling properly. Temperature stable at 37 degrees F.',
-    image: '/images/repair-viking.jpg',
+    image: '/images/repair-viking.jpeg',
   },
 ]

@@ -14,9 +14,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${rc.brand} ${rc.model} Repair in ${rc.city}, TX | Refrigerator Houston Repair`,
     description: `Real repair case: ${rc.title} in ${rc.city}, TX. ${rc.diagnosis.slice(0, 120)}. Call (346) 512-3688 for same-day service.`,
-    openGraph: {
-      images: rc.image ? [rc.image] : [],
-    },
   }
 }
 
@@ -26,7 +23,6 @@ export default function RepairCasePage({ params }: { params: { slug: string } })
 
   return (
     <>
-      {/* Header */}
       <section className="bg-brand-gray py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-sm text-gray-500 mb-3">
@@ -41,22 +37,13 @@ export default function RepairCasePage({ params }: { params: { slug: string } })
         </div>
       </section>
 
-      {/* Content */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
 
-          {/* Photo */}
-          {rc.image ? (
-            <div className="rounded-2xl overflow-hidden h-80 shadow-md">
-              <img
-                src={rc.image}
-                alt={rc.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ) : (
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-64 flex items-center justify-center text-6xl">
-              🔧
+          {/* Main photo */}
+          {rc.image && (
+            <div className="rounded-2xl overflow-hidden shadow-md" style={{maxHeight: '500px'}}>
+              <img src={rc.image} alt={rc.title} className="w-full h-full object-cover" />
             </div>
           )}
 
@@ -78,6 +65,23 @@ export default function RepairCasePage({ params }: { params: { slug: string } })
             <h2 className="font-display text-xl font-bold text-brand-dark mb-3">🔍 Diagnosis / Cause Found</h2>
             <p className="text-gray-700 leading-relaxed">{rc.diagnosis}</p>
           </div>
+
+          {/* Photo gallery with captions */}
+          {rc.photos && rc.photos.length > 0 && (
+            <div>
+              <h2 className="font-display text-xl font-bold text-brand-dark mb-6">📸 Repair Photos</h2>
+              <div className="space-y-6">
+                {rc.photos.map((photo, i) => (
+                  <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+                    <img src={photo.src} alt={photo.caption} className={`w-full object-cover ${photo.src.includes("wine-5") ? "object-bottom" : photo.src.includes("wine-3") ? "object-center" : photo.src.includes("wine-6") ? "object-center" : "object-top"}`} style={{maxHeight: "400px"}} />
+                    <div className="p-4 bg-gray-50">
+                      <p className="text-sm text-gray-600 italic">{photo.caption}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Repair */}
           <div>
