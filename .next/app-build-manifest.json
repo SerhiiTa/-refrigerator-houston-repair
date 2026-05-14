@@ -21,11 +21,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/service-areas/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/service-areas/[slug]/page.js"
-    ],
     "/service-areas/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

@@ -10,12 +10,25 @@ export async function generateStaticParams() {
   return serviceAreas.map(a => ({ slug: a.slug }))
 }
 
+const areaDescriptions: Record<string, string> = {
+  'houston': 'Professional refrigerator repair in Houston, TX. We service Sub-Zero, Thermador, LG, Samsung, GE and more. Same-day appointments available. Call (346) 512-3688.',
+  'katy': 'Refrigerator repair in Katy, TX. Expert service for Sub-Zero, LG, Samsung, Whirlpool and all major brands. Fast same-day response. Call (346) 512-3688.',
+  'sugar-land': 'Refrigerator repair in Sugar Land, TX. All major brands including Sub-Zero, GE, Samsung, KitchenAid. Reliable same-day service. Call (346) 512-3688.',
+  'spring': 'Refrigerator repair in Spring, TX. Sub-Zero, Thermador, LG, Samsung and more — all brands serviced. Mon–Sun 7AM–9PM. Call (346) 512-3688.',
+  'memorial': 'Refrigerator repair in Memorial, Houston TX. Specializing in luxury brands — Sub-Zero, Thermador, Viking, KitchenAid. Same-day service. Call (346) 512-3688.',
+  'cypress': 'Refrigerator repair in Cypress, TX. We fix all major brands including LG, Samsung, GE, Whirlpool. Fast and reliable service. Call (346) 512-3688.',
+  'richmond': 'Refrigerator repair in Richmond, TX. Expert technicians servicing Sub-Zero, LG, Samsung, GE and all major brands. Call (346) 512-3688.',
+  'fulshear': 'Refrigerator repair in Fulshear, TX. Luxury and standard brand repairs — Sub-Zero, Thermador, LG, Samsung. Same-day available. Call (346) 512-3688.',
+  'seabrook': 'Refrigerator repair in Seabrook, TX. All major brands serviced including Sub-Zero, LG, Samsung, GE. Fast response, fair pricing. Call (346) 512-3688.',
+  'the-woodlands': 'Refrigerator repair in The Woodlands, TX. Expert service for Sub-Zero, Thermador, LG, Samsung and more. Same-day appointments. Call (346) 512-3688.',
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const area = serviceAreas.find(a => a.slug === params.slug)
   if (!area) return {}
   return {
     title: `Refrigerator Repair in ${area.name}, TX | (346) 512-3688`,
-    description: area.intro,
+    description: areaDescriptions[params.slug] ?? `Professional refrigerator repair in ${area.name}, TX. All major brands, same-day service. Call (346) 512-3688.`,
   }
 }
 

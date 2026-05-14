@@ -10,12 +10,23 @@ export async function generateStaticParams() {
   return brands.map(b => ({ slug: b.slug }))
 }
 
+const brandDescriptions: Record<string, string> = {
+  'sub-zero': 'Certified Sub-Zero refrigerator repair in Houston, TX. We fix cooling failures, compressor issues, evaporator leaks on all Sub-Zero models. Same-day service. Call (346) 512-3688.',
+  'thermador': 'Expert Thermador refrigerator & wine cooler repair in Houston, TX. Factory-trained technicians, all models. Mon–Sun 7AM–9PM. Call (346) 512-3688.',
+  'lg': 'LG refrigerator repair in Houston, TX. French door, side-by-side, bottom freezer — all models. Fast diagnosis, same-day parts. Call (346) 512-3688.',
+  'samsung': 'Samsung refrigerator repair in Houston, TX. Ice maker problems, cooling failures, compressor issues — we fix it all. Same-day service. Call (346) 512-3688.',
+  'ge': 'GE refrigerator repair in Houston, TX. Profile, Café, Monogram series — all models serviced. Experienced technicians, fast turnaround. Call (346) 512-3688.',
+  'whirlpool': 'Whirlpool refrigerator repair in Houston, TX. French door and side-by-side models. Honest diagnostics, fair pricing. Call (346) 512-3688.',
+  'kitchenaid': 'KitchenAid refrigerator repair in Houston, TX. Built-in and freestanding models. Expert technicians, same-day service available. Call (346) 512-3688.',
+  'viking': 'Viking refrigerator repair in Houston, TX. Pro-grade appliances require expert hands. All Viking models serviced in Houston area. Call (346) 512-3688.',
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const brand = brands.find(b => b.slug === params.slug)
   if (!brand) return {}
   return {
     title: `${brand.name} Refrigerator Repair in Houston, TX`,
-    description: `Expert ${brand.name} refrigerator repair in Houston. ${brand.intro.slice(0, 120)}...`,
+    description: brandDescriptions[params.slug] ?? `Expert ${brand.name} refrigerator repair in Houston, TX. Same-day service, all models. Call (346) 512-3688.`,
   }
 }
 
