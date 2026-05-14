@@ -12,8 +12,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const rc = repairCases.find(r => r.slug === params.slug)
   if (!rc) return {}
   return {
-    title: `${rc.title} — ${rc.city}, TX`,
-    description: `${rc.brand} ${rc.model} repair case in ${rc.city}, TX. ${rc.diagnosis.slice(0, 120)}...`,
+    title: `${rc.brand} ${rc.model} Repair in ${rc.city}, TX | Refrigerator Houston Repair`,
+    description: `Real repair case: ${rc.title} in ${rc.city}, TX. ${rc.diagnosis.slice(0, 120)}. Call (346) 512-3688 for same-day service.`,
+    openGraph: {
+      images: rc.image ? [rc.image] : [],
+    },
   }
 }
 
@@ -43,9 +46,19 @@ export default function RepairCasePage({ params }: { params: { slug: string } })
         <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
 
           {/* Photo */}
-          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-64 flex items-center justify-center text-6xl">
-            🔧
-          </div>
+          {rc.image ? (
+            <div className="rounded-2xl overflow-hidden h-80 shadow-md">
+              <img
+                src={rc.image}
+                alt={rc.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ) : (
+            <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl h-64 flex items-center justify-center text-6xl">
+              🔧
+            </div>
+          )}
 
           {/* Symptoms */}
           <div>
@@ -91,7 +104,7 @@ export default function RepairCasePage({ params }: { params: { slug: string } })
             <p className="text-green-700">{rc.result}</p>
           </div>
 
-          {/* Brand + Area links */}
+          {/* Links */}
           <div className="flex flex-wrap gap-3 pt-4 border-t border-gray-100">
             <Link href={`/brands/${rc.brandSlug}`} className="btn-outline text-sm">
               More {rc.brand} Repairs →

@@ -1,5 +1,6 @@
 {
-  "/repair-cases/[slug]/page": "app/repair-cases/[slug]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
+  "/repair-cases/[slug]/page": "app/repair-cases/[slug]/page.js",
   "/repair-cases/page": "app/repair-cases/page.js"
 }
