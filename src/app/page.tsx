@@ -45,7 +45,7 @@ export default function HomePage() {
               Professional refrigerator repair by experienced technicians. Real repair cases. Real solutions. Houston and surrounding areas.
             </p>
             <div className="flex flex-wrap gap-3 mb-10">
-              <a href="tel:3465123688" className="btn-primary text-base px-7 py-3.5">
+              <a href="/schedule" className="btn-primary text-base px-7 py-3.5">
                 📅 Schedule Service
               </a>
               <Link href="/repair-cases" className="btn-outline text-base px-7 py-3.5">

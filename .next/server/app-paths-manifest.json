@@ -1,7 +1,7 @@
 {
-  "/repair-cases/[slug]/page": "app/repair-cases/[slug]/page.js",
-  "/repair-cases/page": "app/repair-cases/page.js",
-  "/page": "app/page.js",
   "/service-areas/page": "app/service-areas/page.js",
-  "/service-areas/[slug]/page": "app/service-areas/[slug]/page.js"
+  "/service-areas/[slug]/page": "app/service-areas/[slug]/page.js",
+  "/repair-cases/[slug]/page": "app/repair-cases/[slug]/page.js",
+  "/schedule/page": "app/schedule/page.js",
+  "/page": "app/page.js"
 }

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const PHONE = '(346) 512-3688'
-const PHONE_HREF = 'tel:3465123688'
+const PHONE_HREF = "tel:3465123688"
 
 const navLinks = [
   { href: '/', label: 'Home' },

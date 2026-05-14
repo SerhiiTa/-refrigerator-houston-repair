@@ -22,7 +22,7 @@ export default function CTABanner({
           </div>
         </div>
         <a
-          href="tel:3465123688"
+          href="/schedule"
           className="shrink-0 inline-flex items-center gap-2 bg-white text-brand-blue font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors text-sm"
         >
           SCHEDULE SERVICE →
