@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { serviceAreas } from '@/data/serviceAreas'
+import { repairCases } from '@/data/repairCases'
+import RepairCaseCard from '@/components/RepairCaseCard'
 import CTABanner from '@/components/CTABanner'
 
 export async function generateStaticParams() {
@@ -21,9 +23,10 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
   const area = serviceAreas.find(a => a.slug === params.slug)
   if (!area) notFound()
 
+  const areaCases = repairCases.filter(rc => rc.areaSlug === params.slug)
+
   return (
     <>
-      {/* Hero */}
       <section className="bg-brand-gray py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-sm text-gray-500 mb-2">
@@ -41,7 +44,6 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12">
-          {/* Local context */}
           <div>
             <h2 className="font-display text-2xl font-bold text-brand-dark mb-4">Refrigerator Repair in {area.name}</h2>
             <p className="text-gray-600 leading-relaxed mb-8">{area.localContext}</p>
@@ -57,7 +59,6 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             </ul>
           </div>
 
-          {/* Brands + Nearby */}
           <div className="space-y-8">
             <div>
               <h3 className="font-display text-lg font-bold text-brand-dark mb-4">Brands We Service in {area.name}</h3>
@@ -99,6 +100,20 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      {/* Repair Cases */}
+      {areaCases.length > 0 && (
+        <section className="py-16 bg-brand-gray">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 className="section-title mb-8">Real Repair Cases in {area.name}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {areaCases.map(rc => (
+                <RepairCaseCard key={rc.slug} rc={rc} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTABanner
         title={`Need Refrigerator Repair in ${area.name}?`}

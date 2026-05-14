@@ -154,4 +154,19 @@ export const serviceAreas: ServiceArea[] = [
     nearbyAreas: ['Clear Lake', 'League City', 'Webster', 'Friendswood', 'Nassau Bay'],
     zipCodes: ['77586'],
   },
+  {
+    slug: 'the-woodlands',
+    name: 'The Woodlands',
+    intro: 'Professional refrigerator repair in The Woodlands, TX — serving Creekside, Panther Creek, Cochran Crossing, Alden Bridge and all surrounding communities.',
+    localContext: 'The Woodlands is one of the most affluent master-planned communities in the Houston area, with a high concentration of luxury appliances including Sub-Zero, Thermador, Viking and Wolf. Our technicians are experienced with these premium brands and carry OEM parts for same-day repairs.',
+    brandsServiced: ['Sub-Zero', 'Thermador', 'Viking', 'LG', 'Samsung', 'KitchenAid', 'GE'],
+    commonProblems: [
+      'Sealed system leaks in premium built-in refrigerators',
+      'Wine cooler temperature issues',
+      'Sub-Zero compressor failures',
+      'Ice maker system problems',
+    ],
+    nearbyAreas: ['Spring', 'Cypress', 'Tomball', 'Conroe', 'Houston'],
+    zipCodes: ['77380', '77381', '77382', '77384', '77385', '77386', '77387', '77389'],
+  }
 ]

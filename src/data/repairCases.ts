@@ -64,7 +64,7 @@ export const repairCases: RepairCase[] = [
     model: 'T18IW900SP',
     city: 'The Woodlands',
     area: 'The Woodlands',
-    areaSlug: 'spring',
+    areaSlug: 'the-woodlands',
     title: 'Thermador Built-In Wine Cooler Sealed System Leak Repair',
     symptoms: [
       'Customer reported wine cooler temperature rising above set point',
