@@ -8,6 +8,13 @@ import CTABanner from '@/components/CTABanner'
 export const metadata: Metadata = {
   title: 'Refrigerator Repair in Houston, TX | (346) 512-3688',
   description: 'Professional refrigerator repair in Houston and surrounding areas. Expert technicians, same-day service, all major brands. Call (346) 512-3688.',
+  openGraph: {
+    images: [{
+      url: '/images/og-banner.jpg',
+      width: 1200,
+      height: 630,
+    }],
+  },
 }
 
 const brandLogos = [
@@ -72,9 +79,9 @@ export default function HomePage() {
           <div className="relative hidden md:block">
             <div className="rounded-3xl h-96 overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&auto=format&fit=crop"
-                alt="Modern kitchen with stainless steel refrigerator"
-                className="w-full h-full object-cover"
+                src="/images/hero-family.jpg"
+                alt="Happy family in kitchen near refrigerator"
+                className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/30 via-transparent to-transparent rounded-3xl" />
             </div>

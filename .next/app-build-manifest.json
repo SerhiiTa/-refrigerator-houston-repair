@@ -16,11 +16,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/repair-cases/[slug]/page.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/service-areas/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -60,6 +55,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/brands/[slug]/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ]
   }
 }
