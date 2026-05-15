@@ -195,4 +195,54 @@ export const repairCases: RepairCase[] = [
           }
       ]
   },
+  {
+      "slug": "scotsman-scn60-ice-maker-water-seal-repair",
+      "brand": "Scotsman",
+      "brandSlug": "ge",
+      "model": "SCN60",
+      "city": "Memorial",
+      "area": "Memorial",
+      "areaSlug": "memorial",
+      "title": "Scotsman SCN60 Ice Maker Not Making Ice — Drain Pump Running Constantly",
+      "symptoms": [
+          "Ice maker stopped producing ice entirely",
+          "Drain pump running continuously and audibly without stopping",
+          "Water leaking through evaporator and draining away instead of freezing",
+          "No ice in the bin despite unit appearing to run normally"
+      ],
+      "diagnosis": "Upon receiving the Scotsman SCN60 ice maker service call in Memorial, TX 77024, the technician began a systematic inspection of the unit. The customer reported that the machine had not been producing ice for several days and that the drain pump could be heard operating almost continuously — an immediate red flag indicating water was not being retained in the evaporator as intended during the freeze cycle.\n\nThe technician removed the front panel and inspected the water distribution system, freeze plate, and evaporator assembly. Visual inspection revealed active water leakage around the evaporator shaft seal area. Water was bypassing the evaporator entirely and flowing directly into the drain pan, which explained the constant drain pump activation. The unit was cycling through its normal sequence, but because water could not accumulate on the freeze plate, no ice was being formed.\n\nFurther disassembly of the evaporator shaft assembly exposed the root cause: the mechanical ceramic water seal — a precision component designed to maintain a watertight barrier between the rotating shaft and the water reservoir — had cracked and disintegrated. Additionally, the carbon (graphite) bearing that supports the shaft had worn completely beyond serviceable limits. Both components are subject to normal wear over extended service cycles, but their simultaneous failure caused total loss of ice production. No refrigerant leaks or electrical faults were detected. The compressor, refrigerant circuit, and control board were all confirmed functional.",
+      "repairPerformed": "Disconnected the Scotsman SCN60 from power and water supply before beginning disassembly to ensure safe working conditions.. Removed the outer cabinet panels and front service cover to gain full access to the evaporator and water distribution assembly.. Drained remaining water from the internal reservoir and water circuits to prevent contamination during component removal.. Disassembled the evaporator shaft assembly, carefully extracting the worn carbon (graphite) bearing from its housing — bearing showed severe erosion and flattening on the contact surface.. Removed the failed mechanical ceramic water seal from the evaporator shaft. The ceramic face was found cracked and the rubber boot had hardened and lost elasticity, causing the seal failure.. Ordered OEM-specification replacement parts: new mechanical water-sealed ceramic shaft seal and compatible carbon bearing assembly for the Scotsman SCN60 — parts arrived within three business days.. Cleaned all mating surfaces on the evaporator shaft and housing using appropriate solvents to remove mineral deposits and seal residue before installing new components.. Installed the new carbon bearing into the evaporator housing, pressing it to the correct seating depth per Scotsman service specifications.. Installed the new ceramic mechanical water seal onto the evaporator shaft, ensuring proper orientation of the ceramic face and correct compression of the spring-loaded assembly.. Reassembled the evaporator shaft assembly and reinstalled it into the evaporator body, torquing fasteners to specification.. Performed a full cleaning of external cabinet surfaces and internal water circuits, including the water distribution tubes, reservoir, and drain pan, using Scotsman-approved nickel-safe cleaner to remove scale buildup.. Reconnected water supply and power, initiated a full freeze cycle, and confirmed the drain pump was no longer running continuously. The unit produced a full batch of ice within the first cycle, verifying successful repair.",
+      "partsReplaced": [
+          "Mechanical water-sealed ceramic shaft seal (OEM-specification, compatible with Scotsman SCN60 evaporator assembly)",
+          "Carbon (graphite) bearing for evaporator shaft (worn beyond serviceable limits, replaced with OEM-equivalent)"
+      ],
+      "result": "Following the replacement of the ceramic water seal and carbon bearing, the Scotsman SCN60 resumed full normal operation. The drain pump stopped its continuous cycling immediately upon the first test run, confirming that water was now being retained properly in the evaporator. The unit produced a complete ice batch within the first freeze cycle after repair. Total repair time on-site was approximately half a day. The customer was satisfied with the quick turnaround — parts arrived in three days and the repair was completed the same morning. A standard 90-day labor warranty was provided on the replaced components.",
+      "image": "/images/repair-scotsman-scn60-2.jpeg",
+      "photos": [
+          {
+              "src": "/images/repair-scotsman-scn60-1.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          },
+          {
+              "src": "/images/repair-scotsman-scn60-2.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          },
+          {
+              "src": "/images/repair-scotsman-scn60-3.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          },
+          {
+              "src": "/images/repair-scotsman-scn60-4.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          },
+          {
+              "src": "/images/repair-scotsman-scn60-5.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          },
+          {
+              "src": "/images/repair-scotsman-scn60-6.jpeg",
+              "caption": "Scotsman SCN60 repair in Memorial, TX"
+          }
+      ]
+  },
 ]
