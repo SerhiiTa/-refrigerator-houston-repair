@@ -198,7 +198,7 @@ export const repairCases: RepairCase[] = [
   {
       "slug": "scotsman-scn60-ice-maker-water-seal-repair",
       "brand": "Scotsman",
-      "brandSlug": "ge",
+      "brandSlug": "scotsman",
       "model": "SCN60",
       "city": "Memorial",
       "area": "Memorial",

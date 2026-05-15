@@ -145,4 +145,38 @@ export const brands: Brand[] = [
     popularModels: ['VCBB5363ELSS', 'VCRB5363ELSS', 'DFBB163DLP', 'RVRF336SS'],
     repairCaseSlugs: [],
   },
+  {
+    slug: 'bosch',
+    name: 'Bosch',
+    tagline: 'French Door & Bottom Freezer Specialists',
+    intro:
+      'Bosch refrigerators feature advanced European engineering, R-600a isobutane sealed systems, and NoFrost technology. Our technicians are experienced with the full Bosch lineup, from French door models to bottom freezer units.',
+    commonProblems: [
+      'Freezer not cooling',
+      'Refrigerant leak (R-600a sealed system)',
+      'Compressor failure',
+      'Ice maker not working',
+      'Temperature fluctuation',
+      'NoFrost system failure',
+    ],
+    popularModels: ['B36CT80SNS', 'B36CD50SNS', 'B22CS80SNS', 'B36WL60ECS', 'B36IT800NP'],
+    repairCaseSlugs: [],
+  },
+  {
+    slug: 'scotsman',
+    name: 'Scotsman',
+    tagline: 'Commercial Ice Maker Repair Specialists',
+    intro:
+      'Scotsman is a trusted name in commercial and residential ice makers. Our technicians diagnose and repair all Scotsman ice machine models throughout the Houston area, from sealed system failures to water seal and bearing replacements.',
+    commonProblems: [
+      'Ice maker not producing ice',
+      'Water seal failure',
+      'Compressor issues',
+      'Refrigerant leak',
+      'Control board failure',
+      'Ice quality problems',
+    ],
+    popularModels: ['SCN60', 'CU50', 'C0522', 'MC0522', 'C0330'],
+    repairCaseSlugs: [],
+  },
 ]
