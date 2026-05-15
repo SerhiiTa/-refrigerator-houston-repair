@@ -1,65 +1,30 @@
 {
   "pages": {
-    "/repair-cases/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/repair-cases/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/repair-cases/[slug]/page": [
+    "/repair-cases/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/repair-cases/[slug]/page.js"
-    ],
-    "/service-areas/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/service-areas/page.js"
-    ],
-    "/schedule/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/schedule/page.js"
-    ],
-    "/service-areas/[slug]/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/service-areas/[slug]/layout.js"
-    ],
-    "/service-areas/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/service-areas/layout.js"
-    ],
-    "/schedule/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/schedule/layout.js"
+      "static/chunks/app/repair-cases/page.js"
     ],
     "/repair-cases/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/repair-cases/layout.js"
     ],
-    "/brands/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/brands/page.js"
-    ],
-    "/brands/[slug]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/brands/[slug]/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
+    ],
+    "/repair-cases/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/repair-cases/[slug]/page.js"
     ]
   }
 }
