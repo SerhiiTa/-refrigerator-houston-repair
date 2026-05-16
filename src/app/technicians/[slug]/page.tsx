@@ -25,7 +25,7 @@ export default async function TechnicianPage({ params }: { params: Promise<{ slu
   const tech = technicians.find(t => t.slug === slug)
   if (!tech) notFound()
 
-  const cases = repairCases.filter(rc => (rc as any).technicianSlug === slug)
+  const cases = repairCases.filter(rc => rc.technicianSlug === slug)
 
   return (
     <>

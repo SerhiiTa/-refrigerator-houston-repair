@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { repairCases } from '@/data/repairCases'
 import { serviceAreas } from '@/data/serviceAreas'
+import { technicians } from '@/data/technicians'
 import RepairCaseCard from '@/components/RepairCaseCard'
 import CTABanner from '@/components/CTABanner'
 
@@ -141,6 +142,34 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredCases.map(rc => (
               <RepairCaseCard key={rc.slug} rc={rc} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TECHNICIANS */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="section-title">Our Technicians</h2>
+            <Link href="/technicians" className="text-brand-blue text-sm font-semibold hover:underline hidden sm:block">
+              Meet the team →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+            {technicians.map(tech => (
+              <Link key={tech.slug} href={`/technicians/${tech.slug}`} className="bg-brand-gray rounded-2xl p-6 flex items-center gap-4 hover:shadow-md transition-shadow">
+                <img
+                  src={tech.photo || '/images/technicians/placeholder.jpeg'}
+                  alt={tech.name}
+                  className="w-16 h-16 rounded-full object-cover border-2 border-brand-blue/20"
+                />
+                <div>
+                  <div className="font-display font-bold text-brand-dark">{tech.name}</div>
+                  <div className="text-gray-500 text-sm">{tech.title}</div>
+                  <div className="text-brand-blue text-xs font-semibold mt-1">View profile →</div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
