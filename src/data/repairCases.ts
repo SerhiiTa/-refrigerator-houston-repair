@@ -111,7 +111,7 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Located and repaired pinhole leak, replaced drier on both circuits, recharged both sides of the dual compressor system.',
     partsReplaced: ['Evaporator repair', 'Dual circuit filter driers (x2)', 'Refrigerant (both circuits)'],
     result: 'Both sections restored to proper temps. 1-year warranty on sealed system work.',
-    image: '/images/repair-ge.jpeg',
+    image: '/images/repair-subzero-661-exterior.jpeg',
     technicianSlug: 'serhii-t',
   },
   {
