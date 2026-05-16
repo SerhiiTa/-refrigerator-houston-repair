@@ -20,9 +20,21 @@ export default function Footer() {
                 <div className="text-[10px] font-semibold text-gray-400 tracking-widest uppercase">Houston Repair</div>
               </div>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-4">
               Professional refrigerator repair in Houston and surrounding areas. We service all major brands and models.
             </p>
+            <div className="border-t border-white/10 pt-4">
+              <p className="text-gray-500 text-xs mb-2">Need other appliance repairs?</p>
+              <a
+                href="https://appliancerepair-homefix.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-blue hover:text-blue-300 text-sm font-semibold transition-colors"
+              >
+                🔧 HomeFix Appliance Repair →
+              </a>
+              <p className="text-gray-500 text-xs mt-1">Washer, dryer, dishwasher & more</p>
+            </div>
           </div>
 
           {/* Quick Links */}
