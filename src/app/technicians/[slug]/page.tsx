@@ -41,9 +41,11 @@ export default async function TechnicianPage({ params }: { params: Promise<{ slu
           </div>
 
           <div className="flex flex-col sm:flex-row items-start gap-8 mt-6">
-            <div className="w-24 h-24 rounded-full bg-brand-blue flex items-center justify-center text-white text-3xl font-bold flex-shrink-0">
-              {tech.name.charAt(0)}
-            </div>
+            <img
+              src={tech.photo || '/images/technicians/placeholder.jpeg'}
+              alt={tech.name}
+              className="w-32 h-32 rounded-full object-cover border-4 border-brand-blue/20 mb-4"
+            />
             <div>
               <h1 className="font-display text-4xl md:text-5xl font-extrabold text-brand-dark mb-2">
                 {tech.name}
