@@ -13,7 +13,7 @@ const d = {
   "areaSlug": "houston",
   "zip": "77042",
   "repairType": "Door Gasket Replacement & Preventive Maintenance",
-  "refrigerant": "R-404A",
+  "refrigerant": "R-134a",
   "rootCause": "Door gasket torn from repeated forceful pulling by children",
   "mainPhoto": "/images/repair-sub-zero-632f-4.jpeg",
   "symptoms": [
@@ -22,11 +22,11 @@ const d = {
     "Condensation and frost buildup around the door frame area",
     "Interior temperatures slightly higher than expected set point"
   ],
-  "diagnosis": "Upon arrival at the customer's residence in Houston, TX 77042, the technician performed a thorough inspection of the Sub-Zero Model 632F refrigerator (Serial P2951517, manufactured in Madison, WI). The unit operates on R-404A refrigerant with a 2.00a charge and draws 9.0 amps at rated load. The customer reported that the door gasket had been pulled on repeatedly by young children in the household, resulting in a visible tear along one section of the fresh food door seal.\n\nThe technician confirmed the damage by direct visual inspection — the gasket was torn in multiple places and had lost its magnetic retention capability along a significant portion of the door perimeter. A dollar-bill test was performed at several points around the door; the bill pulled out with little to no resistance in the affected areas, confirming substantial seal failure. The technician also used an infrared thermometer to detect warm ambient air infiltration at the breach points. A multimeter verified that amperage draw was elevated slightly above the label-rated 9.0A baseline, consistent with the compressor working harder to compensate for the thermal loss caused by the compromised seal. No refrigerant leaks were detected via electronic leak detector, and system pressures checked with manifold gauges were within normal operating range for R-404A. The sealed system itself was intact; the root cause was isolated entirely to the mechanical failure of the door gasket.",
+  "diagnosis": "Upon arrival at the customer's residence in Houston, TX 77042, the technician performed a thorough inspection of the Sub-Zero Model 632F refrigerator (Serial P2951517, manufactured in Madison, WI). The unit operates on R-134a refrigerant with a 2.00a charge and draws 9.0 amps at rated load. The customer reported that the door gasket had been pulled on repeatedly by young children in the household, resulting in a visible tear along one section of the fresh food door seal.\n\nThe technician confirmed the damage by direct visual inspection — the gasket was torn in multiple places and had lost its magnetic retention capability along a significant portion of the door perimeter. A dollar-bill test was performed at several points around the door; the bill pulled out with little to no resistance in the affected areas, confirming substantial seal failure. The technician also used an infrared thermometer to detect warm ambient air infiltration at the breach points. A multimeter verified that amperage draw was elevated slightly above the label-rated 9.0A baseline, consistent with the compressor working harder to compensate for the thermal loss caused by the compromised seal. No refrigerant leaks were detected via electronic leak detector, and system pressures checked with manifold gauges were within normal operating range for R-134a. The sealed system itself was intact; the root cause was isolated entirely to the mechanical failure of the door gasket.",
   "repairSteps": [
     "Performed initial visual inspection of the Sub-Zero 632F door gasket; photographed the torn sections for documentation (visible in photo 3 of the case file).",
     "Conducted a dollar-bill pull test at six points around the full door perimeter to map all areas of seal failure and confirm the extent of gasket compromise.",
-    "Used an infrared thermometer to detect warm air infiltration at the breach points and an electronic manifold gauge set to verify R-404A system pressures — both high-side and low-side — were within specification.",
+    "Used an infrared thermometer to detect warm air infiltration at the breach points and an electronic manifold gauge set to verify R-134a system pressures — both high-side and low-side — were within specification.",
     "Verified amperage draw with a clamp meter; reading was slightly above the label-rated 9.0A, consistent with compressor overwork due to the air leak.",
     "Identified the correct OEM-compatible replacement gasket for Sub-Zero Model 632F fresh food door and placed an expedited parts order; the gasket was shipped from Dallas and delivered to Houston within 2 business days.",
     "Upon part arrival, powered down the unit and carefully removed the existing torn gasket by loosening the door liner retaining screws along the full door perimeter.",
@@ -57,7 +57,7 @@ const d = {
     },
     {
       "question": "Is it worth repairing a door gasket on an older Sub-Zero 632F, or should I replace the unit?",
-      "answer": "Sub-Zero appliances are built to last 20+ years, and a door gasket is one of the most cost-effective repairs available. If the sealed system — compressor, condenser, and R-404A refrigerant charge — is intact and functioning properly as confirmed by manifold gauge readings, replacing the gasket and performing routine maintenance is almost always the right financial decision compared to the cost of a new Sub-Zero unit."
+      "answer": "Sub-Zero appliances are built to last 20+ years, and a door gasket is one of the most cost-effective repairs available. If the sealed system — compressor, condenser, and R-134a refrigerant charge — is intact and functioning properly as confirmed by manifold gauge readings, replacing the gasket and performing routine maintenance is almost always the right financial decision compared to the cost of a new Sub-Zero unit."
     },
     {
       "question": "Can I replace a Sub-Zero 632F door gasket myself, or does it require a professional technician?",
@@ -150,7 +150,7 @@ const schema = {
           "name": "Is it worth repairing a door gasket on an older Sub-Zero 632F, or should I replace the unit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sub-Zero appliances are built to last 20+ years, and a door gasket is one of the most cost-effective repairs available. If the sealed system — compressor, condenser, and R-404A refrigerant charge — is intact and functioning properly as confirmed by manifold gauge readings, replacing the gasket and performing routine maintenance is almost always the right financial decision compared to the cost of a new Sub-Zero unit."
+            "text": "Sub-Zero appliances are built to last 20+ years, and a door gasket is one of the most cost-effective repairs available. If the sealed system — compressor, condenser, and R-134a refrigerant charge — is intact and functioning properly as confirmed by manifold gauge readings, replacing the gasket and performing routine maintenance is almost always the right financial decision compared to the cost of a new Sub-Zero unit."
           }
         },
         {
