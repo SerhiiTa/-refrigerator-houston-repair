@@ -79,17 +79,17 @@ export const repairCases: RepairCase[] = [
     repairPerformed: 'Technician opened the sealed system and located the exact leak point in the copper tubing. The leak was brazed and sealed using silver solder. A service valve was welded onto the compressor for future service access. The entire sealed system was then pressure-tested with nitrogen at 150 PSI and held for 30 minutes to confirm no remaining leaks. After passing the pressure test, the system was evacuated with a vacuum pump down to 500 microns to remove all moisture and non-condensables. The system was then recharged by weight with the exact factory-specified amount of R-134a refrigerant per the unit nameplate. Full operation test confirmed proper cooling and temperature stability.',
     partsReplaced: [
       'Sealed system copper tubing repair (brazed)',
-      'Service valve welded to compressor',
+      'Service valve (installed on compressor)',
       'Filter drier',
-      'R-134a refrigerant (factory spec charge by weight)',
+      'R-134a refrigerant (factory-specified charge weight)',
     ],
-    result: 'Wine cooler fully restored to factory performance. Temperature stabilized at 45 degrees F within 2 hours of recharge. Customer saved over $5,000 compared to the cost of purchasing and installing a new Thermador built-in wine cooler. Unit has been operating perfectly since the repair.',
+    result: 'Wine cooler restored to proper operating temperature within 3 hours of recharge. Unit maintaining stable 45 degrees F as set. Customer confirmed all wine bottles properly chilled.',
     image: '/images/repair-thermador-wine-1.jpeg',
     photos: [
-      { src: '/images/repair-thermador-wine-1.jpeg', caption: 'Thermador T18IW900SP wine cooler in The Woodlands, TX — temperature not maintaining set point' },
-      { src: '/images/repair-thermador-wine-3.jpeg', caption: 'Leak detection confirmed — visible bubbling at the leak point in the copper tubing' },
-      { src: '/images/repair-thermador-wine-5.jpeg', caption: 'Professional tools on site: manifold gauges, nitrogen tank, vacuum pump and new filter drier' },
-      { src: '/images/repair-thermador-wine-6.jpeg', caption: 'Wine cooler during repair — sealed system being serviced' },
+      { src: '/images/repair-thermador-wine-1.jpeg', caption: 'Thermador T18IW900SP wine cooler — unit in customer kitchen before repair' },
+      { src: '/images/repair-thermador-wine-3.jpeg', caption: 'Refrigerant leak detected at copper tubing — visible bubbling with leak detection solution' },
+      { src: '/images/repair-thermador-wine-5.jpeg', caption: 'Technician tools and manifold gauges during sealed system recharge' },
+      { src: '/images/repair-thermador-wine-6.jpeg', caption: 'Wine cooler reassembled and operational after sealed system repair' },
     ],
     technicianSlug: 'serhii-t',
   },
@@ -112,6 +112,10 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['Evaporator repair', 'Dual circuit filter driers (x2)', 'Refrigerant (both circuits)'],
     result: 'Both sections restored to proper temps. 1-year warranty on sealed system work.',
     image: '/images/repair-subzero-661-exterior.jpeg',
+    photos: [
+      { src: '/images/repair-subzero-661-exterior.jpeg', caption: 'Sub-Zero 661 built-in refrigerator — River Oaks, Houston TX' },
+      { src: '/images/repair-subzero-661-evaporator.jpeg', caption: 'Sub-Zero 661 evaporator coil after leak repair and recharge' },
+    ],
     technicianSlug: 'serhii-t',
   },
   {
@@ -166,26 +170,21 @@ export const repairCases: RepairCase[] = [
     areaSlug: 'memorial',
     title: 'Bosch B36CT80SNS Freezer Not Cooling — Evaporator Leak Repair',
     symptoms: [
-      'Freezer section not cooling — temperature measured at approximately 70°F instead of 0°F',
-      'Food in the freezer thawing or completely warm to the touch',
-      'Compressor running continuously but no cold air produced in the freezer compartment',
-      'No ice production and freezer interior feeling like room temperature',
+      'Freezer section not cooling, refrigerator section working normally',
+      'Dual compressor unit — freezer compressor running but not cooling',
+      'Manifold gauges showing deep vacuum on freezer circuit',
     ],
-    diagnosis: 'Upon arrival at the customer\'s home in the Memorial area (ZIP 77043), the technician confirmed the complaint: the freezer section of the Bosch B36CT80SNS French door refrigerator was not cooling. An infrared thermometer reading inside the freezer registered approximately 70°F — far above the required operating range of 0°F to 5°F. The fresh food compartment was marginally cooler but also above safe food storage temperature.\n\nThe technician first verified that the compressor was running by listening and feeling for vibration at the rear of the unit — the compressor was confirmed operational. A piercing valve (Schrader-type access valve) was installed on the process tube to connect the manifold gauge set without permanently altering the sealed system. Gauge readings revealed an extremely deep vacuum of approximately -18 inches Hg (negative pressure), which is a definitive indicator that refrigerant had fully escaped the system. The label on the unit confirmed the refrigerant type as R-600a (isobutane) at a factory charge of 1.55 oz / 44 g, operating at 110–127V / 60 Hz, 3.5 A.\n\nTo locate the leak, the technician pressurized the sealed system with dry nitrogen. A leak was detected at the evaporator coil using an electronic leak detector, confirmed with soapy solution. The evaporator coil showed a pinhole breach, likely caused by ice buildup erosion or a micro-crack in the aluminum tubing. Replacement of the evaporator was deemed the only viable repair path.',
-    repairPerformed: 'Performed initial system diagnostic: confirmed freezer temperature at ~70°F with digital thermometer; verified compressor operation by physical inspection at the rear of the unit.. Installed a Schrader piercing valve on the low-side process tube to access the sealed refrigeration system without cutting the line.. Connected a manifold gauge set to the piercing valve and recorded system pressure at approximately -18 in. Hg (deep vacuum), confirming total loss of R-600a refrigerant charge.. Pressurized the sealed system with dry nitrogen to approximately 150 PSI to perform a leak search without introducing flammable refrigerant into an open system.. Used an electronic refrigerant leak detector and soapy bubble solution to pinpoint the leak location — identified a breach at the evaporator coil inside the freezer compartment.. Removed all freezer interior panels, shelving, ice maker components, and insulation wrap to gain full access to the evaporator assembly.. Carefully cut and removed the faulty evaporator coil; captured any residual nitrogen pressure safely before disconnecting tubing.. Installed the OEM-equivalent replacement evaporator coil, silver-brazed all joints using nitrogen purge brazing technique to prevent internal oxidation scaling.. Re-pressurized the completed sealed system with dry nitrogen to 150 PSI and held for 30 minutes — no pressure drop detected, confirming leak-free repair.. Connected a two-stage vacuum pump and evacuated the sealed system down to 500 microns; held vacuum for 15 minutes to verify system integrity before charging.. Charged the sealed system with R-600a refrigerant to the factory specification of 1.55 oz / 44 g as stated on the appliance nameplate label.. Restored all interior panels and components, powered on the unit, and monitored compressor amperage draw against the rated 3.5 A baseline — readings were within normal range. Verified freezer temperature drop over the test period.',
-    partsReplaced: [
-      'Evaporator coil assembly — OEM-equivalent replacement for Bosch B36CT80SNS freezer compartment',
-      'Schrader piercing valve (low-side process tube access fitting)',
-      'R-600a isobutane refrigerant — 1.55 oz / 44 g per factory nameplate specification',
-    ],
-    result: 'After recharging the sealed system with the factory-specified 1.55 oz of R-600a and restarting the compressor, the freezer compartment began cooling immediately. Within approximately 3–4 hours of monitored operation, the freezer reached a stable temperature of 2°F and the fresh food section stabilized at 37°F — both within optimal ranges. The customer was very satisfied with the same-day repair outcome. A 90-day labor warranty was provided on the sealed system repair and the replacement evaporator coil.',
+    diagnosis: 'Refrigerant leak in freezer evaporator circuit. Both TKA68E23DNHA compressors operational. Deep vacuum on gauges confirmed complete refrigerant loss from freezer side.',
+    repairPerformed: 'Located leak in freezer evaporator, replaced evaporator, installed service valve on freezer compressor, pressure tested with nitrogen, evacuated system, recharged with R600a. Verified inverter board operation on both circuits.',
+    partsReplaced: ['Freezer evaporator coil', 'Service valve', 'R600a refrigerant'],
+    result: 'Both freezer and refrigerator sections cooling properly. Inverter boards verified at correct frequency.',
     image: '/images/repair-bosch-b36ct80sns-2.jpeg',
     photos: [
-      { src: '/images/repair-bosch-b36ct80sns-1.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
-      { src: '/images/repair-bosch-b36ct80sns-2.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
-      { src: '/images/repair-bosch-b36ct80sns-3.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
-      { src: '/images/repair-bosch-b36ct80sns-4.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
-      { src: '/images/repair-bosch-b36ct80sns-5.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+      { src: '/images/repair-bosch-b36ct80sns-1.jpeg', caption: 'Bosch B36CT80SNS model label — dual compressor French door, R600a refrigerant' },
+      { src: '/images/repair-bosch-b36ct80sns-2.jpeg', caption: 'Bosch B36CT80SNS interior — freezer section was completely warm' },
+      { src: '/images/repair-bosch-b36ct80sns-3.jpeg', caption: 'Manifold gauges showing deep vacuum — confirmed refrigerant leak' },
+      { src: '/images/repair-bosch-b36ct80sns-4.jpeg', caption: 'Dual TKA68E23DNHA compressors — both running, leak in freezer evaporator' },
+      { src: '/images/repair-bosch-b36ct80sns-5.jpeg', caption: 'Dual inverter boards verified after R600a recharge' },
     ],
     technicianSlug: 'serhii-t',
   },
@@ -223,45 +222,33 @@ export const repairCases: RepairCase[] = [
     technicianSlug: 'serhii-t',
   },
   {
-      "slug": "sub-zero-632f-door-gasket-replacement-houston",
-      "brand": "Sub-Zero",
-      "brandSlug": "sub-zero",
-      "model": "632F",
-      "city": "Houston",
-      "area": "Houston",
-      "areaSlug": "houston",
-      "title": "Sub-Zero 632F Door Gasket Replacement",
-      "symptoms": [
-          "Visible tear and gaps in the refrigerator door seal",
-          "Warm air leaking into the fresh food compartment, causing the unit to run longer than normal",
-          "Condensation and frost buildup around the door frame area",
-          "Interior temperatures slightly higher than expected set point"
-      ],
-      "diagnosis": "Upon arrival at the customer's residence in Houston, TX 77042, the technician performed a thorough inspection of the Sub-Zero Model 632F refrigerator (Serial P2951517, manufactured in Madison, WI). The unit operates on R-134a refrigerant with a 2.00a charge and draws 9.0 amps at rated load. The customer reported that the door gasket had been pulled on repeatedly by young children in the household, resulting in a visible tear along one section of the fresh food door seal.\n\nThe technician confirmed the damage by direct visual inspection — the gasket was torn in multiple places and had lost its magnetic retention capability along a significant portion of the door perimeter. A dollar-bill test was performed at several points around the door; the bill pulled out with little to no resistance in the affected areas, confirming substantial seal failure. The technician also used an infrared thermometer to detect warm ambient air infiltration at the breach points. A multimeter verified that amperage draw was elevated slightly above the label-rated 9.0A baseline, consistent with the compressor working harder to compensate for the thermal loss caused by the compromised seal. No refrigerant leaks were detected via electronic leak detector, and system pressures checked with manifold gauges were within normal operating range for R-134a. The sealed system itself was intact; the root cause was isolated entirely to the mechanical failure of the door gasket.",
-      "repairPerformed": "Performed initial visual inspection of the Sub-Zero 632F door gasket; photographed the torn sections for documentation (visible in photo 3 of the case file).. Conducted a dollar-bill pull test at six points around the full door perimeter to map all areas of seal failure and confirm the extent of gasket compromise.. Used an infrared thermometer to detect warm air infiltration at the breach points and an electronic manifold gauge set to verify R-134a system pressures — both high-side and low-side — were within specification.. Verified amperage draw with a clamp meter; reading was slightly above the label-rated 9.0A, consistent with compressor overwork due to the air leak.. Identified the correct OEM-compatible replacement gasket for Sub-Zero Model 632F fresh food door and placed an expedited parts order; the gasket was shipped from Dallas and delivered to Houston within 2 business days.. Upon part arrival, powered down the unit and carefully removed the existing torn gasket by loosening the door liner retaining screws along the full door perimeter.. Cleaned the door liner channel thoroughly with a mild detergent solution to remove debris, old gasket adhesive residue, and food particles that had accumulated in the track.. Soaked the new OEM gasket in warm water for approximately 10 minutes to make it pliable for proper seating, then carefully pressed it into the door liner channel starting at the top corners and working around the perimeter.. Reinstalled and torqued all door liner retaining screws evenly to manufacturer specification to ensure uniform gasket compression across the full door frame.. Checked and adjusted door alignment and hinge tension to confirm the door closed squarely and the gasket seated evenly against the cabinet frame on all four sides.. Performed a comprehensive preventive maintenance service on the full unit: cleaned condenser coils, inspected evaporator fan motors, verified defrost cycle operation, and cleaned interior drain lines.. Powered the unit back on, monitored startup amperage draw, confirmed it returned to the 9.0A label baseline, and verified interior temperatures stabilized within the Sub-Zero operating range before closing the service call.",
-      "partsReplaced": [
-          "Sub-Zero 632F OEM Fresh Food Door Gasket (magnetic, full-perimeter replacement, shipped from Dallas distribution center)"
-      ],
-      "result": "Following the gasket replacement and full preventive maintenance service, the Sub-Zero 632F returned to optimal operation. The door seal passed the dollar-bill test at all points around the perimeter, and interior temperatures stabilized within the manufacturer-specified range within approximately two hours of restart. Amperage draw confirmed at the label-rated 9.0A baseline. The customer was very satisfied with the quality of the repair and the additional maintenance performed. A service warranty was provided on the labor and the installed gasket.",
-      "image": "/images/repair-sub-zero-632f-4.jpeg",
-      "photos": [
-          {
-              "src": "/images/repair-sub-zero-632f-1.jpeg",
-              "caption": "Sub-Zero 632F repair in Houston, TX"
-          },
-          {
-              "src": "/images/repair-sub-zero-632f-2.jpeg",
-              "caption": "Sub-Zero 632F repair in Houston, TX"
-          },
-          {
-              "src": "/images/repair-sub-zero-632f-3.jpeg",
-              "caption": "Sub-Zero 632F repair in Houston, TX"
-          },
-          {
-              "src": "/images/repair-sub-zero-632f-4.jpeg",
-              "caption": "Sub-Zero 632F repair in Houston, TX"
-          }
-      ],
-      "technicianSlug": "serhii-t"
+    slug: 'sub-zero-632f-door-gasket-replacement-houston',
+    brand: 'Sub-Zero',
+    brandSlug: 'sub-zero',
+    model: '632F',
+    city: 'Houston',
+    area: 'Houston',
+    areaSlug: 'houston',
+    title: 'Sub-Zero 632F Door Gasket Replacement',
+    symptoms: [
+      'Visible tear and gaps in the refrigerator door seal',
+      'Warm air leaking into the fresh food compartment, causing the unit to run longer than normal',
+      'Condensation and frost buildup around the door frame area',
+      'Interior temperatures slightly higher than expected set point',
+    ],
+    diagnosis: 'Upon arrival at the customer\'s residence in Houston, TX 77042, the technician performed a thorough inspection of the Sub-Zero Model 632F refrigerator. The customer reported that the door gasket had been pulled on repeatedly by young children in the household, resulting in a visible tear along one section of the fresh food door seal.\n\nThe technician confirmed the damage by direct visual inspection — the gasket was torn in multiple places and had lost its magnetic retention capability along a significant portion of the door perimeter. A dollar-bill test was performed at several points around the door; the bill pulled out with little to no resistance in the affected areas, confirming substantial seal failure.',
+    repairPerformed: 'Performed initial visual inspection and documented torn gasket sections. Conducted dollar-bill pull test at six points around the full door perimeter. Used infrared thermometer to detect warm air infiltration at breach points. Verified R-134a system pressures within specification. Placed expedited parts order — gasket shipped from Dallas. Upon part arrival, removed existing torn gasket, cleaned door liner channel, soaked new OEM gasket in warm water, installed new gasket starting at top corners. Reinstalled door liner retaining screws evenly. Adjusted door alignment and hinge tension. Performed full preventive maintenance: cleaned condenser coils, inspected evaporator fan motors, verified defrost cycle, cleaned drain lines.',
+    partsReplaced: [
+      'Sub-Zero 632F OEM Fresh Food Door Gasket (magnetic, full-perimeter replacement, shipped from Dallas distribution center)',
+    ],
+    result: 'Following the gasket replacement and full preventive maintenance service, the Sub-Zero 632F returned to optimal operation. The door seal passed the dollar-bill test at all points around the perimeter, and interior temperatures stabilized within the manufacturer-specified range within approximately two hours of restart. The customer was very satisfied with the quality of the repair.',
+    image: '/images/repair-sub-zero-632f-4.jpeg',
+    photos: [
+      { src: '/images/repair-sub-zero-632f-1.jpeg', caption: 'Sub-Zero 632F repair in Houston, TX' },
+      { src: '/images/repair-sub-zero-632f-2.jpeg', caption: 'Sub-Zero 632F repair in Houston, TX' },
+      { src: '/images/repair-sub-zero-632f-3.jpeg', caption: 'Sub-Zero 632F repair in Houston, TX' },
+      { src: '/images/repair-sub-zero-632f-4.jpeg', caption: 'Sub-Zero 632F repair in Houston, TX' },
+    ],
+    technicianSlug: 'serhii-t',
   },
 ]
