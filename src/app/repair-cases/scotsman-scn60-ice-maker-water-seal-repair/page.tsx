@@ -7,7 +7,7 @@ const d = {
   "metaTitle": "Scotsman SCN60 Ice Maker Repair — Memorial, TX 77024 | Houston Appliance Repair",
   "metaDescription": "Scotsman SCN60 ice maker repair in Memorial TX 77024. Replaced ceramic water seal & carbon bearing. Ice production restored same week.",
   "brand": "Scotsman",
-  "brandSlug": "ge",
+  "brandSlug": "scotsman",
   "model": "SCN60",
   "city": "Memorial",
   "areaSlug": "memorial",
