@@ -4,7 +4,18 @@ import { useState } from 'react'
 const TG_TOKEN = '7729286289:AAHLTyOGP7cs6K_GXCHsR1BFkMkOhzp3ovM'
 const TG_CHAT_ID = '444284470'
 
-export default function ScheduleForm() {
+// Technician chat IDs for direct notifications
+const TECH_CHAT_IDS: Record<string, string> = {
+  'serhii-t': '444284470',
+  'alex-k': '6110090662',
+}
+
+interface ScheduleFormProps {
+  technicianSlug?: string
+  technicianName?: string
+}
+
+export default function ScheduleForm({ technicianSlug, technicianName }: ScheduleFormProps) {
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -24,8 +35,12 @@ export default function ScheduleForm() {
     e.preventDefault()
     setStatus('sending')
 
+    const techLine = technicianSlug && technicianName
+      ? `\n👨‍🔧 Requested Tech: ${technicianName}`
+      : ''
+
     const message = `
-🔧 NEW SERVICE REQUEST — Refrigerator Houston Repair
+🔧 NEW SERVICE REQUEST — Refrigerator Houston Repair${techLine}
 
 👤 Name: ${form.name}
 📞 Phone: ${form.phone}
@@ -36,16 +51,20 @@ export default function ScheduleForm() {
 📝 Issue: ${form.issue}
     `.trim()
 
-    try {
-      const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+    const sendMessage = (chatId: string) =>
+      fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: TG_CHAT_ID,
-          text: message,
-          parse_mode: 'HTML',
-        }),
+        body: JSON.stringify({ chat_id: chatId, text: message, parse_mode: 'HTML' }),
       })
+
+    try {
+      const res = await sendMessage(TG_CHAT_ID)
+
+      // Notify requested technician if different from admin
+      if (technicianSlug && TECH_CHAT_IDS[technicianSlug] && TECH_CHAT_IDS[technicianSlug] !== TG_CHAT_ID) {
+        sendMessage(TECH_CHAT_IDS[technicianSlug]).catch(() => {})
+      }
 
       if (res.ok) {
         setStatus('sent')
@@ -71,6 +90,15 @@ export default function ScheduleForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {technicianSlug && technicianName && (
+        <div className="bg-brand-light border border-blue-100 rounded-xl px-4 py-3 flex items-center gap-3">
+          <span className="text-brand-blue font-bold text-lg">👨‍🔧</span>
+          <div>
+            <div className="text-sm font-semibold text-brand-dark">Requesting: {technicianName}</div>
+            <div className="text-xs text-gray-500">We will do our best to assign your preferred technician.</div>
+          </div>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-1">Your Name *</label>

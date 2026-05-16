@@ -14,6 +14,7 @@ export interface RepairCase {
   result: string
   image?: string
   photos?: { src: string; caption: string }[]
+  technicianSlug?: string
 }
 
 export const repairCases: RepairCase[] = [
@@ -36,6 +37,7 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['Evaporator coil assembly', 'Filter drier', 'R-134a refrigerant charge'],
     result: 'Unit cooling to 37 degrees F refrigerator / 0 degrees F freezer within 4 hours of repair.',
     image: '/images/repair-subzero-648pro.jpeg',
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'lg-compressor-replacement',
@@ -56,6 +58,7 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['LG linear compressor (genuine OEM)', 'Filter drier', 'Refrigerant'],
     result: 'Cooling restored. Customer noted unit is quieter than before.',
     image: '/images/repair-lg.jpeg',
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'thermador-wine-cooler-leak',
@@ -88,6 +91,7 @@ export const repairCases: RepairCase[] = [
       { src: '/images/repair-thermador-wine-5.jpeg', caption: 'Professional tools on site: manifold gauges, nitrogen tank, vacuum pump and new filter drier' },
       { src: '/images/repair-thermador-wine-6.jpeg', caption: 'Wine cooler during repair — sealed system being serviced' },
     ],
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'sub-zero-evaporator-leak',
@@ -108,6 +112,7 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['Evaporator repair', 'Dual circuit filter driers (x2)', 'Refrigerant (both circuits)'],
     result: 'Both sections restored to proper temps. 1-year warranty on sealed system work.',
     image: '/images/repair-ge.jpeg',
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'samsung-ice-maker-repair',
@@ -128,6 +133,7 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['Defrost heater assembly', 'Defrost thermostat', 'Ice maker module'],
     result: 'Ice maker producing ice normally. No further leaking.',
     image: '/images/repair-samsung.jpeg',
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'viking-not-cooling',
@@ -148,6 +154,7 @@ export const repairCases: RepairCase[] = [
     partsReplaced: ['Condenser fan motor', 'Fan blade'],
     result: 'Unit cooling properly. Temperature stable at 37 degrees F.',
     image: '/images/repair-viking.jpeg',
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'bosch-b36ct80sns-freezer-evaporator-leak-repair',
@@ -180,6 +187,7 @@ export const repairCases: RepairCase[] = [
       { src: '/images/repair-bosch-b36ct80sns-4.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
       { src: '/images/repair-bosch-b36ct80sns-5.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
     ],
+    technicianSlug: 'serhii-t',
   },
   {
     slug: 'scotsman-scn60-ice-maker-water-seal-repair',
@@ -212,6 +220,7 @@ export const repairCases: RepairCase[] = [
       { src: '/images/repair-scotsman-scn60-5.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
       { src: '/images/repair-scotsman-scn60-6.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
     ],
+    technicianSlug: 'serhii-t',
   },
   {
       "slug": "sub-zero-632f-door-gasket-replacement-houston",
@@ -252,6 +261,7 @@ export const repairCases: RepairCase[] = [
               "src": "/images/repair-sub-zero-632f-4.jpeg",
               "caption": "Sub-Zero 632F repair in Houston, TX"
           }
-      ]
+      ],
+      "technicianSlug": "serhii-t"
   },
 ]

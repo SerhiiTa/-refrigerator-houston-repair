@@ -1,12 +1,16 @@
 import type { Metadata } from 'next'
 import ScheduleForm from '@/components/ScheduleForm'
+import { technicians } from '@/data/technicians'
 
 export const metadata: Metadata = {
   title: 'Schedule Refrigerator Repair in Houston | (346) 512-3688',
   description: 'Schedule same-day refrigerator repair in Houston. $89 service call includes travel, diagnostics and dispatch. Waived if you repair with us.',
 }
 
-export default function SchedulePage() {
+export default async function SchedulePage({ searchParams }: { searchParams: Promise<{ technician?: string }> }) {
+  const { technician: techSlug } = await searchParams
+  const requestedTech = techSlug ? technicians.find(t => t.slug === techSlug) : null
+
   return (
     <>
       <section className="bg-brand-gray py-16">
@@ -15,7 +19,9 @@ export default function SchedulePage() {
             Schedule Service
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl">
-            Book your refrigerator repair appointment online. Fast response, same-day service available.
+            {requestedTech
+              ? `Booking with ${requestedTech.name} — ${requestedTech.title}`
+              : 'Book your refrigerator repair appointment online. Fast response, same-day service available.'}
           </p>
         </div>
       </section>
@@ -67,7 +73,7 @@ export default function SchedulePage() {
           {/* Form */}
           <div>
             <h2 className="font-display text-2xl font-bold text-brand-dark mb-6">Book Online</h2>
-            <ScheduleForm />
+            <ScheduleForm technicianSlug={requestedTech?.slug} technicianName={requestedTech?.name} />
           </div>
 
         </div>
