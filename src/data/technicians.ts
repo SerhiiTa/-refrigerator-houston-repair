@@ -6,6 +6,7 @@ export interface Technician {
   specialties: string[]
   certifications: string[]
   photo?: string
+  areas?: string[]
 }
 
 export const technicians: Technician[] = [

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { technicians } from '@/data/technicians'
 import { repairCases } from '@/data/repairCases'
+import { serviceAreas } from '@/data/serviceAreas'
 import RepairCaseCard from '@/components/RepairCaseCard'
 import CTABanner from '@/components/CTABanner'
 
@@ -87,6 +88,30 @@ export default async function TechnicianPage({ params }: { params: Promise<{ slu
                 ))}
               </ul>
             </div>
+
+            {tech.areas && tech.areas.length > 0 && (
+              <div>
+                <h2 className="font-display text-2xl font-bold text-brand-dark mb-4">Service Areas</h2>
+                {tech.areas[0] === 'all' ? (
+                  <p className="text-gray-700">All Houston and surrounding areas</p>
+                ) : (
+                  <div className="flex flex-wrap gap-2">
+                    {tech.areas.map(slug => {
+                      const area = serviceAreas.find(a => a.slug === slug)
+                      return area ? (
+                        <Link
+                          key={slug}
+                          href={`/service-areas/${slug}`}
+                          className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors"
+                        >
+                          {area.name}
+                        </Link>
+                      ) : null
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="space-y-6">
