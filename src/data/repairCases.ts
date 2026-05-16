@@ -87,7 +87,8 @@ export const repairCases: RepairCase[] = [
       { src: '/images/repair-thermador-wine-3.jpeg', caption: 'Leak detection confirmed — visible bubbling at the leak point in the copper tubing' },
       { src: '/images/repair-thermador-wine-5.jpeg', caption: 'Professional tools on site: manifold gauges, nitrogen tank, vacuum pump and new filter drier' },
       { src: '/images/repair-thermador-wine-6.jpeg', caption: 'Wine cooler during repair — sealed system being serviced' },
-    ],  },
+    ],
+  },
   {
     slug: 'sub-zero-evaporator-leak',
     brand: 'Sub-Zero',
@@ -149,100 +150,67 @@ export const repairCases: RepairCase[] = [
     image: '/images/repair-viking.jpeg',
   },
   {
-      "slug": "bosch-b36ct80sns-freezer-evaporator-leak-repair",
-      "brand": "BSH Home Appliance Corporation",
-      "brandSlug": "bosch",
-      "model": "B36CT80SNS",
-      "city": "Memorial",
-      "area": "Memorial",
-      "areaSlug": "memorial",
-      "title": "Bosch B36CT80SNS Freezer Not Cooling — Evaporator Leak Repair",
-      "symptoms": [
-          "Freezer section not cooling — temperature measured at approximately 70°F instead of 0°F",
-          "Food in the freezer thawing or completely warm to the touch",
-          "Compressor running continuously but no cold air produced in the freezer compartment",
-          "No ice production and freezer interior feeling like room temperature"
-      ],
-      "diagnosis": "Upon arrival at the customer's home in the Memorial area (ZIP 77043), the technician confirmed the complaint: the freezer section of the Bosch B36CT80SNS French door refrigerator was not cooling. An infrared thermometer reading inside the freezer registered approximately 70°F — far above the required operating range of 0°F to 5°F. The fresh food compartment was marginally cooler but also above safe food storage temperature.\n\nThe technician first verified that the compressor was running by listening and feeling for vibration at the rear of the unit — the compressor was confirmed operational. A piercing valve (Schrader-type access valve) was installed on the process tube to connect the manifold gauge set without permanently altering the sealed system. Gauge readings revealed an extremely deep vacuum of approximately -18 inches Hg (negative pressure), which is a definitive indicator that refrigerant had fully escaped the system. The label on the unit confirmed the refrigerant type as R-600a (isobutane) at a factory charge of 1.55 oz / 44 g, operating at 110–127V / 60 Hz, 3.5 A.\n\nTo locate the leak, the technician pressurized the sealed system with dry nitrogen. A leak was detected at the evaporator coil using an electronic leak detector, confirmed with soapy solution. The evaporator coil showed a pinhole breach, likely caused by ice buildup erosion or a micro-crack in the aluminum tubing. Replacement of the evaporator was deemed the only viable repair path.",
-      "repairPerformed": "Performed initial system diagnostic: confirmed freezer temperature at ~70°F with digital thermometer; verified compressor operation by physical inspection at the rear of the unit.. Installed a Schrader piercing valve on the low-side process tube to access the sealed refrigeration system without cutting the line.. Connected a manifold gauge set to the piercing valve and recorded system pressure at approximately -18 in. Hg (deep vacuum), confirming total loss of R-600a refrigerant charge.. Pressurized the sealed system with dry nitrogen to approximately 150 PSI to perform a leak search without introducing flammable refrigerant into an open system.. Used an electronic refrigerant leak detector and soapy bubble solution to pinpoint the leak location — identified a breach at the evaporator coil inside the freezer compartment.. Removed all freezer interior panels, shelving, ice maker components, and insulation wrap to gain full access to the evaporator assembly.. Carefully cut and removed the faulty evaporator coil; captured any residual nitrogen pressure safely before disconnecting tubing.. Installed the OEM-equivalent replacement evaporator coil, silver-brazed all joints using nitrogen purge brazing technique to prevent internal oxidation scaling.. Re-pressurized the completed sealed system with dry nitrogen to 150 PSI and held for 30 minutes — no pressure drop detected, confirming leak-free repair.. Connected a two-stage vacuum pump and evacuated the sealed system down to 500 microns; held vacuum for 15 minutes to verify system integrity before charging.. Charged the sealed system with R-600a refrigerant to the factory specification of 1.55 oz / 44 g as stated on the appliance nameplate label.. Restored all interior panels and components, powered on the unit, and monitored compressor amperage draw against the rated 3.5 A baseline — readings were within normal range. Verified freezer temperature drop over the test period.",
-      "partsReplaced": [
-          "Evaporator coil assembly — OEM-equivalent replacement for Bosch B36CT80SNS freezer compartment",
-          "Schrader piercing valve (low-side process tube access fitting)",
-          "R-600a isobutane refrigerant — 1.55 oz / 44 g per factory nameplate specification"
-      ],
-      "result": "After recharging the sealed system with the factory-specified 1.55 oz of R-600a and restarting the compressor, the freezer compartment began cooling immediately. Within approximately 3–4 hours of monitored operation, the freezer reached a stable temperature of 2°F and the fresh food section stabilized at 37°F — both within optimal ranges. The customer was very satisfied with the same-day repair outcome. A 90-day labor warranty was provided on the sealed system repair and the replacement evaporator coil.",
-      "image": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-2.jpeg",
-      "photos": [
-          {
-              "src": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-1.jpeg",
-              "caption": "BSH Home Appliance Corporation B36CT80SNS repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-2.jpeg",
-              "caption": "BSH Home Appliance Corporation B36CT80SNS repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-3.jpeg",
-              "caption": "BSH Home Appliance Corporation B36CT80SNS repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-4.jpeg",
-              "caption": "BSH Home Appliance Corporation B36CT80SNS repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-bsh-home-appliance-corporation-b36ct80sns-5.jpeg",
-              "caption": "BSH Home Appliance Corporation B36CT80SNS repair in Memorial, TX"
-          }
-      ]
+    slug: 'bosch-b36ct80sns-freezer-evaporator-leak-repair',
+    brand: 'Bosch',
+    brandSlug: 'bosch',
+    model: 'B36CT80SNS',
+    city: 'Memorial',
+    area: 'Memorial',
+    areaSlug: 'memorial',
+    title: 'Bosch B36CT80SNS Freezer Not Cooling — Evaporator Leak Repair',
+    symptoms: [
+      'Freezer section not cooling — temperature measured at approximately 70°F instead of 0°F',
+      'Food in the freezer thawing or completely warm to the touch',
+      'Compressor running continuously but no cold air produced in the freezer compartment',
+      'No ice production and freezer interior feeling like room temperature',
+    ],
+    diagnosis: 'Upon arrival at the customer\'s home in the Memorial area (ZIP 77043), the technician confirmed the complaint: the freezer section of the Bosch B36CT80SNS French door refrigerator was not cooling. An infrared thermometer reading inside the freezer registered approximately 70°F — far above the required operating range of 0°F to 5°F. The fresh food compartment was marginally cooler but also above safe food storage temperature.\n\nThe technician first verified that the compressor was running by listening and feeling for vibration at the rear of the unit — the compressor was confirmed operational. A piercing valve (Schrader-type access valve) was installed on the process tube to connect the manifold gauge set without permanently altering the sealed system. Gauge readings revealed an extremely deep vacuum of approximately -18 inches Hg (negative pressure), which is a definitive indicator that refrigerant had fully escaped the system. The label on the unit confirmed the refrigerant type as R-600a (isobutane) at a factory charge of 1.55 oz / 44 g, operating at 110–127V / 60 Hz, 3.5 A.\n\nTo locate the leak, the technician pressurized the sealed system with dry nitrogen. A leak was detected at the evaporator coil using an electronic leak detector, confirmed with soapy solution. The evaporator coil showed a pinhole breach, likely caused by ice buildup erosion or a micro-crack in the aluminum tubing. Replacement of the evaporator was deemed the only viable repair path.',
+    repairPerformed: 'Performed initial system diagnostic: confirmed freezer temperature at ~70°F with digital thermometer; verified compressor operation by physical inspection at the rear of the unit.. Installed a Schrader piercing valve on the low-side process tube to access the sealed refrigeration system without cutting the line.. Connected a manifold gauge set to the piercing valve and recorded system pressure at approximately -18 in. Hg (deep vacuum), confirming total loss of R-600a refrigerant charge.. Pressurized the sealed system with dry nitrogen to approximately 150 PSI to perform a leak search without introducing flammable refrigerant into an open system.. Used an electronic refrigerant leak detector and soapy bubble solution to pinpoint the leak location — identified a breach at the evaporator coil inside the freezer compartment.. Removed all freezer interior panels, shelving, ice maker components, and insulation wrap to gain full access to the evaporator assembly.. Carefully cut and removed the faulty evaporator coil; captured any residual nitrogen pressure safely before disconnecting tubing.. Installed the OEM-equivalent replacement evaporator coil, silver-brazed all joints using nitrogen purge brazing technique to prevent internal oxidation scaling.. Re-pressurized the completed sealed system with dry nitrogen to 150 PSI and held for 30 minutes — no pressure drop detected, confirming leak-free repair.. Connected a two-stage vacuum pump and evacuated the sealed system down to 500 microns; held vacuum for 15 minutes to verify system integrity before charging.. Charged the sealed system with R-600a refrigerant to the factory specification of 1.55 oz / 44 g as stated on the appliance nameplate label.. Restored all interior panels and components, powered on the unit, and monitored compressor amperage draw against the rated 3.5 A baseline — readings were within normal range. Verified freezer temperature drop over the test period.',
+    partsReplaced: [
+      'Evaporator coil assembly — OEM-equivalent replacement for Bosch B36CT80SNS freezer compartment',
+      'Schrader piercing valve (low-side process tube access fitting)',
+      'R-600a isobutane refrigerant — 1.55 oz / 44 g per factory nameplate specification',
+    ],
+    result: 'After recharging the sealed system with the factory-specified 1.55 oz of R-600a and restarting the compressor, the freezer compartment began cooling immediately. Within approximately 3–4 hours of monitored operation, the freezer reached a stable temperature of 2°F and the fresh food section stabilized at 37°F — both within optimal ranges. The customer was very satisfied with the same-day repair outcome. A 90-day labor warranty was provided on the sealed system repair and the replacement evaporator coil.',
+    image: '/images/repair-bosch-b36ct80sns-2.jpeg',
+    photos: [
+      { src: '/images/repair-bosch-b36ct80sns-1.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+      { src: '/images/repair-bosch-b36ct80sns-2.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+      { src: '/images/repair-bosch-b36ct80sns-3.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+      { src: '/images/repair-bosch-b36ct80sns-4.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+      { src: '/images/repair-bosch-b36ct80sns-5.jpeg', caption: 'Bosch B36CT80SNS repair in Memorial, TX' },
+    ],
   },
   {
-      "slug": "scotsman-scn60-ice-maker-water-seal-repair",
-      "brand": "Scotsman",
-      "brandSlug": "scotsman",
-      "model": "SCN60",
-      "city": "Memorial",
-      "area": "Memorial",
-      "areaSlug": "memorial",
-      "title": "Scotsman SCN60 Ice Maker Not Making Ice — Drain Pump Running Constantly",
-      "symptoms": [
-          "Ice maker stopped producing ice entirely",
-          "Drain pump running continuously and audibly without stopping",
-          "Water leaking through evaporator and draining away instead of freezing",
-          "No ice in the bin despite unit appearing to run normally"
-      ],
-      "diagnosis": "Upon receiving the Scotsman SCN60 ice maker service call in Memorial, TX 77024, the technician began a systematic inspection of the unit. The customer reported that the machine had not been producing ice for several days and that the drain pump could be heard operating almost continuously — an immediate red flag indicating water was not being retained in the evaporator as intended during the freeze cycle.\n\nThe technician removed the front panel and inspected the water distribution system, freeze plate, and evaporator assembly. Visual inspection revealed active water leakage around the evaporator shaft seal area. Water was bypassing the evaporator entirely and flowing directly into the drain pan, which explained the constant drain pump activation. The unit was cycling through its normal sequence, but because water could not accumulate on the freeze plate, no ice was being formed.\n\nFurther disassembly of the evaporator shaft assembly exposed the root cause: the mechanical ceramic water seal — a precision component designed to maintain a watertight barrier between the rotating shaft and the water reservoir — had cracked and disintegrated. Additionally, the carbon (graphite) bearing that supports the shaft had worn completely beyond serviceable limits. Both components are subject to normal wear over extended service cycles, but their simultaneous failure caused total loss of ice production. No refrigerant leaks or electrical faults were detected. The compressor, refrigerant circuit, and control board were all confirmed functional.",
-      "repairPerformed": "Disconnected the Scotsman SCN60 from power and water supply before beginning disassembly to ensure safe working conditions.. Removed the outer cabinet panels and front service cover to gain full access to the evaporator and water distribution assembly.. Drained remaining water from the internal reservoir and water circuits to prevent contamination during component removal.. Disassembled the evaporator shaft assembly, carefully extracting the worn carbon (graphite) bearing from its housing — bearing showed severe erosion and flattening on the contact surface.. Removed the failed mechanical ceramic water seal from the evaporator shaft. The ceramic face was found cracked and the rubber boot had hardened and lost elasticity, causing the seal failure.. Ordered OEM-specification replacement parts: new mechanical water-sealed ceramic shaft seal and compatible carbon bearing assembly for the Scotsman SCN60 — parts arrived within three business days.. Cleaned all mating surfaces on the evaporator shaft and housing using appropriate solvents to remove mineral deposits and seal residue before installing new components.. Installed the new carbon bearing into the evaporator housing, pressing it to the correct seating depth per Scotsman service specifications.. Installed the new ceramic mechanical water seal onto the evaporator shaft, ensuring proper orientation of the ceramic face and correct compression of the spring-loaded assembly.. Reassembled the evaporator shaft assembly and reinstalled it into the evaporator body, torquing fasteners to specification.. Performed a full cleaning of external cabinet surfaces and internal water circuits, including the water distribution tubes, reservoir, and drain pan, using Scotsman-approved nickel-safe cleaner to remove scale buildup.. Reconnected water supply and power, initiated a full freeze cycle, and confirmed the drain pump was no longer running continuously. The unit produced a full batch of ice within the first cycle, verifying successful repair.",
-      "partsReplaced": [
-          "Mechanical water-sealed ceramic shaft seal (OEM-specification, compatible with Scotsman SCN60 evaporator assembly)",
-          "Carbon (graphite) bearing for evaporator shaft (worn beyond serviceable limits, replaced with OEM-equivalent)"
-      ],
-      "result": "Following the replacement of the ceramic water seal and carbon bearing, the Scotsman SCN60 resumed full normal operation. The drain pump stopped its continuous cycling immediately upon the first test run, confirming that water was now being retained properly in the evaporator. The unit produced a complete ice batch within the first freeze cycle after repair. Total repair time on-site was approximately half a day. The customer was satisfied with the quick turnaround — parts arrived in three days and the repair was completed the same morning. A standard 90-day labor warranty was provided on the replaced components.",
-      "image": "/images/repair-scotsman-scn60-2.jpeg",
-      "photos": [
-          {
-              "src": "/images/repair-scotsman-scn60-1.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-scotsman-scn60-2.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-scotsman-scn60-3.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-scotsman-scn60-4.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-scotsman-scn60-5.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          },
-          {
-              "src": "/images/repair-scotsman-scn60-6.jpeg",
-              "caption": "Scotsman SCN60 repair in Memorial, TX"
-          }
-      ]
+    slug: 'scotsman-scn60-ice-maker-water-seal-repair',
+    brand: 'Scotsman',
+    brandSlug: 'scotsman',
+    model: 'SCN60',
+    city: 'Memorial',
+    area: 'Memorial',
+    areaSlug: 'memorial',
+    title: 'Scotsman SCN60 Ice Maker Not Making Ice — Drain Pump Running Constantly',
+    symptoms: [
+      'Ice maker stopped producing ice entirely',
+      'Drain pump running continuously and audibly without stopping',
+      'Water leaking through evaporator and draining away instead of freezing',
+      'No ice in the bin despite unit appearing to run normally',
+    ],
+    diagnosis: 'Upon receiving the Scotsman SCN60 ice maker service call in Memorial, TX 77024, the technician began a systematic inspection of the unit. The customer reported that the machine had not been producing ice for several days and that the drain pump could be heard operating almost continuously — an immediate red flag indicating water was not being retained in the evaporator as intended during the freeze cycle.\n\nThe technician removed the front panel and inspected the water distribution system, freeze plate, and evaporator assembly. Visual inspection revealed active water leakage around the evaporator shaft seal area. Water was bypassing the evaporator entirely and flowing directly into the drain pan, which explained the constant drain pump activation. The unit was cycling through its normal sequence, but because water could not accumulate on the freeze plate, no ice was being formed.\n\nFurther disassembly of the evaporator shaft assembly exposed the root cause: the mechanical ceramic water seal — a precision component designed to maintain a watertight barrier between the rotating shaft and the water reservoir — had cracked and disintegrated. Additionally, the carbon (graphite) bearing that supports the shaft had worn completely beyond serviceable limits. Both components are subject to normal wear over extended service cycles, but their simultaneous failure caused total loss of ice production. No refrigerant leaks or electrical faults were detected. The compressor, refrigerant circuit, and control board were all confirmed functional.',
+    repairPerformed: 'Disconnected the Scotsman SCN60 from power and water supply before beginning disassembly to ensure safe working conditions.. Removed the outer cabinet panels and front service cover to gain full access to the evaporator and water distribution assembly.. Drained remaining water from the internal reservoir and water circuits to prevent contamination during component removal.. Disassembled the evaporator shaft assembly, carefully extracting the worn carbon (graphite) bearing from its housing — bearing showed severe erosion and flattening on the contact surface.. Removed the failed mechanical ceramic water seal from the evaporator shaft. The ceramic face was found cracked and the rubber boot had hardened and lost elasticity, causing the seal failure.. Ordered OEM-specification replacement parts: new mechanical water-sealed ceramic shaft seal and compatible carbon bearing assembly for the Scotsman SCN60 — parts arrived within three business days.. Cleaned all mating surfaces on the evaporator shaft and housing using appropriate solvents to remove mineral deposits and seal residue before installing new components.. Installed the new carbon bearing into the evaporator housing, pressing it to the correct seating depth per Scotsman service specifications.. Installed the new ceramic mechanical water seal onto the evaporator shaft, ensuring proper orientation of the ceramic face and correct compression of the spring-loaded assembly.. Reassembled the evaporator shaft assembly and reinstalled it into the evaporator body, torquing fasteners to specification.. Performed a full cleaning of external cabinet surfaces and internal water circuits, including the water distribution tubes, reservoir, and drain pan, using Scotsman-approved nickel-safe cleaner to remove scale buildup.. Reconnected water supply and power, initiated a full freeze cycle, and confirmed the drain pump was no longer running continuously. The unit produced a full batch of ice within the first cycle, verifying successful repair.',
+    partsReplaced: [
+      'Mechanical water-sealed ceramic shaft seal (OEM-specification, compatible with Scotsman SCN60 evaporator assembly)',
+      'Carbon (graphite) bearing for evaporator shaft (worn beyond serviceable limits, replaced with OEM-equivalent)',
+    ],
+    result: 'Following the replacement of the ceramic water seal and carbon bearing, the Scotsman SCN60 resumed full normal operation. The drain pump stopped its continuous cycling immediately upon the first test run, confirming that water was now being retained properly in the evaporator. The unit produced a complete ice batch within the first freeze cycle after repair. Total repair time on-site was approximately half a day. The customer was satisfied with the quick turnaround — parts arrived in three days and the repair was completed the same morning. A standard 90-day labor warranty was provided on the replaced components.',
+    image: '/images/repair-scotsman-scn60-2.jpeg',
+    photos: [
+      { src: '/images/repair-scotsman-scn60-1.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+      { src: '/images/repair-scotsman-scn60-2.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+      { src: '/images/repair-scotsman-scn60-3.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+      { src: '/images/repair-scotsman-scn60-4.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+      { src: '/images/repair-scotsman-scn60-5.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+      { src: '/images/repair-scotsman-scn60-6.jpeg', caption: 'Scotsman SCN60 repair in Memorial, TX' },
+    ],
   },
 ]
