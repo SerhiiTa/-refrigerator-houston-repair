@@ -147,7 +147,7 @@ export default function AlexTechnicianPage() {
                   <p className="text-gray-700">All Houston and surrounding areas</p>
                 ) : (
                   <div className="flex flex-wrap gap-2">
-                    {(d.areas as unknown as string[]).map((a) => (
+                    {d.areas.map((a: any) => (
                       <a key={a} href={`/service-areas/${a}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">
                         {a}
                       </a>
