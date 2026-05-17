@@ -286,9 +286,9 @@ export const repairCases: RepairCase[] = [
   },
   {
     slug: 'refrigerator-freezer-not-cooling-icemaker-lights-houston',
-    brand: 'Unknown',
-    brandSlug: null,
-    model: 'UNKNOWN',
+    brand: 'Viking',
+    brandSlug: 'viking',
+    model: 'VCSB5423SS01',
     city: 'Houston',
     area: 'Houston',
     areaSlug: 'houston',
