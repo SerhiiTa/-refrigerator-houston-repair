@@ -9,14 +9,20 @@
 - Location: Houston, TX
 
 ## Services
-We repair all major refrigerator brands including Sub-Zero, Thermador, LG, Samsung, GE, Whirlpool, KitchenAid, and Viking.
+We repair all major refrigerator brands including Sub-Zero, Thermador, LG, Samsung, GE, Whirlpool, KitchenAid, Viking, Bosch, Scotsman, Jenn-Air, Maytag, Amana, Frigidaire, Electrolux, Hisense, Insignia, ZLine, Kenmore, Miele.
 
 ## Service Areas
-Houston, Katy, Sugar Land, Spring, Memorial, Cypress, Richmond, Fulshear, Seabrook
+Houston, Katy, Sugar Land, Spring, Memorial, Cypress, Richmond, Fulshear, Seabrook, The Woodlands, Pearland, Pasadena, Texas City, Galveston, League City, Friendswood, Baytown, Clear Lake, Webster, Conroe, Magnolia, Klein, Tomball, Humble, Kemah, Deer Park, La Porte
+
+## Technicians
+- Serhii T. — Lead Refrigeration Technician, Sub-Zero and sealed systems specialist
+- Alex Z. — Refrigeration Technician, EPA Section 608 certified
 
 ## Pages
 - Home: https://refrigeratorhoustonrepair.com
-- Repair Cases: https://refrigeratorhoustonrepair.com/repair-cases/
-- Brands: https://refrigeratorhoustonrepair.com/brands/
-- Service Areas: https://refrigeratorhoustonrepair.com/service-areas/
-- Contact: https://refrigeratorhoustonrepair.com/contact/
+- Repair Cases: https://refrigeratorhoustonrepair.com/repair-cases
+- Brands: https://refrigeratorhoustonrepair.com/brands
+- Service Areas: https://refrigeratorhoustonrepair.com/service-areas
+- Technicians: https://refrigeratorhoustonrepair.com/technicians
+- Schedule: https://refrigeratorhoustonrepair.com/schedule
+- Contact: https://refrigeratorhoustonrepair.com/contact
