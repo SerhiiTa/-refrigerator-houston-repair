@@ -427,7 +427,7 @@ export default function Page() {
                     style={{ height: '250px' }}
                   />
                   <div className="p-4 bg-gray-50">
-                    <p className="text-sm text-gray-600 italic">{photo.caption}</p>
+                    <p className="text-sm text-gray-600 italic">{(photo as any).caption}</p>
                   </div>
                 </div>
               ))}
