@@ -148,7 +148,7 @@ export default function AlexTechnicianPage() {
                 ) : (
                   <div className="flex flex-wrap gap-2">
                     {d.areas.map((a: any) => (
-                      <a key={a} href={`/service-areas/${a}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">
+                      <a key={typeof a === "string" ? a : a.slug} href={`/service-areas/${typeof a === "string" ? a : a.slug}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">
                         {a}
                       </a>
                     ))}
