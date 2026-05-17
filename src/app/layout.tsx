@@ -29,8 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-L6Q4YB2K0C" strategy="afterInteractive" />
-      <Script id="ga4" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-L6Q4YB2K0C');`}</Script>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-RBLWRKNMWX" strategy="afterInteractive" />
+      <Script id="ga4" strategy="afterInteractive">{`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-RBLWRKNMWX');`}</Script>
         <Navbar />
         <main>{children}</main>
         <Footer />
