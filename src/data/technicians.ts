@@ -37,7 +37,7 @@ export const technicians: Technician[] = [
   {
     slug: 'alex-t',
     name: 'Alex',
-    title: 'Ведущий техник по ремонту холодильников',
+    title: 'Refrigeration Technician',
     bio: 'Alex is a certified refrigeration technician at Refrigerator Houston Repair, specializing in Sub-Zero, Thermador, Viking, Bosch, KitchenAid.',
     specialties: [
       'Sub-Zero',

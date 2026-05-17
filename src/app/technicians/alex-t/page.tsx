@@ -8,7 +8,7 @@ const d = {
   "slug": "alex-t",
   "name": "Alex",
   "firstName": "Alex",
-  "title": "Ведущий техник по ремонту холодильников",
+  "title": "Refrigeration Technician",
   "bio": "Alex is a certified refrigeration technician at Refrigerator Houston Repair, specializing in Sub-Zero, Thermador, Viking, Bosch, KitchenAid.",
   "specialties": [
     "Sub-Zero",
@@ -71,7 +71,7 @@ const d = {
       "name": "Pasadena"
     }
   ],
-  "metaTitle": "Alex — Ведущий техник по ремонту холодильников | Refrigerator Houston Repair",
+  "metaTitle": "Alex — Refrigeration Technician | Refrigerator Houston Repair",
   "metaDescription": "Alex is a certified refrigeration technician at Refrigerator Houston Repair, specializing in Sub-Zero, Thermador, Viking, Bosch, KitchenAid."
 }
 
