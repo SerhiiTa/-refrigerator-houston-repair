@@ -71,33 +71,4 @@ export const technicians: Technician[] = [
       'pasadena',
     ],
   },
-  {
-    slug: 'mike-t',
-    name: 'Mike',
-    title: 'Refrigeration Technician',
-    bio: 'Mike is a certified refrigeration technician at Refrigerator Houston Repair, specializing in Sub-Zero, Viking, Bosch, LG, GE.',
-    specialties: [
-      'Sub-Zero',
-      'Viking',
-      'Bosch',
-      'LG',
-      'GE',
-      'Samsung',
-      'Frigidaire',
-      'Kenmore',
-    ],
-    certifications: [
-      'EPA Section 608 Certified',
-    ],
-    photo: '/images/technicians/mike-t.jpeg',
-    areas: [
-      'houston',
-      'katy',
-      'sugar-land',
-      'spring',
-      'memorial',
-      'richmond',
-      'fulshear',
-    ],
-  },
 ]
