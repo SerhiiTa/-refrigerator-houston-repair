@@ -143,13 +143,13 @@ export default function AlexTechnicianPage() {
             {d.areas && (
               <div>
                 <h2 className="font-display text-2xl font-bold text-brand-dark mb-4">Service Areas</h2>
-                {d.areas === 'all' ? (
+                {Array.isArray(d.areas) && d.areas.length === 0 ? (
                   <p className="text-gray-700">All Houston and surrounding areas</p>
                 ) : (
                   <div className="flex flex-wrap gap-2">
-                    {(d.areas as Array<{slug: string, name: string}>).map((a) => (
-                      <a key={a.slug} href={`/service-areas/${a.slug}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">
-                        {a.name}
+                    {(d.areas as string[]).map((a) => (
+                      <a key={a} href={`/service-areas/${a}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">
+                        {a}
                       </a>
                     ))}
                   </div>
