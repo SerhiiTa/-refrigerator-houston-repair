@@ -256,7 +256,7 @@ export default function Page() {
               {/* Photo 3 inline */}
               {d.photos[2] && (
                 <div className="rounded-2xl overflow-hidden shadow-md">
-                  <img src={d.photos[2].src} alt={d.photos[2].caption} className="w-full object-cover" style={{ height: '350px' }} />
+                  <img src={(d.photos[2] as any).src} alt={(d.photos[2] as any).caption} className="w-full object-cover" style={{ height: '350px' }} />
                 </div>
               )}
 
@@ -269,7 +269,7 @@ export default function Page() {
               {/* Photo 4 inline */}
               {d.photos[3] && (
                 <div className="rounded-2xl overflow-hidden shadow-md">
-                  <img src={d.photos[3].src} alt={d.photos[3].caption} className="w-full object-cover" style={{ height: '350px' }} />
+                  <img src={(d.photos[3] as any).src} alt={(d.photos[3] as any).caption} className="w-full object-cover" style={{ height: '350px' }} />
                 </div>
               )}
 
