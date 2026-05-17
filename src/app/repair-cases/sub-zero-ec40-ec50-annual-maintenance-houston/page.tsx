@@ -421,8 +421,8 @@ export default function Page() {
               {d.photos.slice(4).map((photo, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white">
                   <img
-                    src={photo.src}
-                    alt={photo.caption}
+                    src={(photo as any).src}
+                    alt={(photo as any).caption}
                     className="w-full object-cover"
                     style={{ height: '250px' }}
                   />
