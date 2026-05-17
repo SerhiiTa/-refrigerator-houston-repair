@@ -71,4 +71,31 @@ export const technicians: Technician[] = [
       'pasadena',
     ],
   },
+  {
+    slug: 'nik-t',
+    name: 'NIK',
+    title: 'Refrigeration Technician',
+    bio: 'NIK is a certified refrigeration technician at Refrigerator Houston Repair, specializing in Sub-Zero, LG, Frigidaire, Kenmore, Samsung.',
+    specialties: [
+      'Sub-Zero',
+      'LG',
+      'Frigidaire',
+      'Kenmore',
+      'Samsung',
+    ],
+    certifications: [
+      'EPA Section 608 Certified',
+    ],
+    photo: '/images/technicians/nik-t.jpeg',
+    areas: [
+      'houston',
+      'katy',
+      'sugar-land',
+      'spring',
+      'memorial',
+      'cypress',
+      'richmond',
+      'fulshear',
+    ],
+  },
 ]
