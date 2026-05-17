@@ -123,7 +123,7 @@ export default function AlexTechnicianPage() {
                 <h2 className="font-display text-2xl font-bold text-brand-dark mb-4">Specialties</h2>
                 <div className="flex flex-wrap gap-2">
                   {d.specialties.map((s: string) => (
-                    <span key={s} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100">{s}</span>
+                    <a key={s} href={`/brands/${s.toLowerCase().replace(/ /g, '-')}`} className="bg-brand-light text-brand-blue text-sm font-semibold px-3 py-1.5 rounded-lg border border-blue-100 hover:bg-blue-100 transition-colors">{s}</a>
                   ))}
                 </div>
               </div>
