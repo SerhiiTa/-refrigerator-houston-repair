@@ -69,27 +69,27 @@ const d = {
   "photos": [
     {
       "src": "/images/repair-unknown-unknown-1.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 1"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 1"
     },
     {
       "src": "/images/repair-unknown-unknown-2.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 2"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 2"
     },
     {
       "src": "/images/repair-unknown-unknown-3.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 3"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 3"
     },
     {
       "src": "/images/repair-unknown-unknown-4.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 4"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 4"
     },
     {
       "src": "/images/repair-unknown-unknown-5.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 5"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 5"
     },
     {
       "src": "/images/repair-unknown-unknown-6.jpeg",
-      "caption": "Unknown UNKNOWN repair in Houston, TX — photo 6"
+      "caption": "Viking VCSB5423SS01 repair in Houston, TX — photo 6"
     }
   ],
   "technicianSlug": "serhii-t"
